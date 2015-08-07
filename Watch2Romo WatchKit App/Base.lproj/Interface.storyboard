@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Forward" id="uLO-rL-7fW">
+                            <connections>
+                                <action selector="forward" destination="AgC-eL-Hgc" id="mN0-4X-u3w"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="VFU-Ep-hMd">
+                            <items>
+                                <button width="0.5" alignment="left" title="Left" id="Ihb-cb-FCx">
+                                    <connections>
+                                        <action selector="left" destination="AgC-eL-Hgc" id="EgC-px-71Q"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Right" id="43s-zC-gbG">
+                                    <connections>
+                                        <action selector="right" destination="AgC-eL-Hgc" id="MvE-eZ-zo1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Backward" id="I4r-gp-9HH">
+                            <connections>
+                                <action selector="backward" destination="AgC-eL-Hgc" id="8RC-8A-UZr"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="VeL-HH-2MM">
+                            <connections>
+                                <action selector="stop" destination="AgC-eL-Hgc" id="I1v-oi-d72"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

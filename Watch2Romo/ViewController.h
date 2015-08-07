@@ -11,7 +11,13 @@
 
 @interface ViewController : UIViewController <RMCoreDelegate>
 
-@property (nonatomic, strong) RMCoreRobot<HeadTiltProtocol, DriveProtocol, LEDProtocol> *robot;
+@property (nonatomic, strong) RMCoreRobotRomo3 *robot;
+
+- (void)forward;
+- (void)right;
+- (void)left;
+- (void)backward;
+- (void)stop;
 
 @end
 

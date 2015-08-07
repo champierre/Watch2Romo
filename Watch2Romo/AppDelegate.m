@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -40,6 +41,22 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply {
+    NSString *action = userInfo[@"action"];
+    if ([action isEqualToString:@"forward"]) {
+        [self.viewController forward];
+    } else if ([action isEqualToString:@"backward"]) {
+        [self.viewController backward];
+    } else if ([action isEqualToString:@"right"]) {
+        [self.viewController right];
+    } else if ([action isEqualToString:@"left"]) {
+        [self.viewController left];
+    } else if ([action isEqualToString:@"stop"]) {
+        [self.viewController stop];
+    }
+    reply(nil);
 }
 
 @end

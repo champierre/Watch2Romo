@@ -16,6 +16,13 @@
 		663F80D91B74ACF100C99EB4 /* Watch2RomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F80D81B74ACF100C99EB4 /* Watch2RomoTests.m */; };
 		663F80E41B74AEF400C99EB4 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F80E31B74AEF400C99EB4 /* RMCore.framework */; };
 		663F80E61B74AF1D00C99EB4 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F80E51B74AF1D00C99EB4 /* ExternalAccessory.framework */; };
+		663F80F21B74B46C00C99EB4 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F80F11B74B46C00C99EB4 /* InterfaceController.m */; };
+		663F80F51B74B46C00C99EB4 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F80F41B74B46C00C99EB4 /* NotificationController.m */; };
+		663F80F71B74B46C00C99EB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F80F61B74B46C00C99EB4 /* Images.xcassets */; };
+		663F80FB1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 663F80FA1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app */; };
+		663F81031B74B46C00C99EB4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F81011B74B46C00C99EB4 /* Interface.storyboard */; };
+		663F81051B74B46C00C99EB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F81041B74B46C00C99EB4 /* Images.xcassets */; };
+		663F81081B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 663F80EB1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +33,35 @@
 			remoteGlobalIDString = 663F80B81B74ACF000C99EB4;
 			remoteInfo = Watch2Romo;
 		};
+		663F80FC1B74B46C00C99EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 663F80B11B74ACF000C99EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663F80F91B74B46C00C99EB4;
+			remoteInfo = "Watch2Romo WatchKit App";
+		};
+		663F81061B74B46C00C99EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 663F80B11B74ACF000C99EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663F80EA1B74B46C00C99EB4;
+			remoteInfo = "Watch2Romo WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		663F810F1B74B46C00C99EB4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				663F81081B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		663F80B91B74ACF000C99EB4 /* Watch2Romo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch2Romo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +79,18 @@
 		663F80D81B74ACF100C99EB4 /* Watch2RomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watch2RomoTests.m; sourceTree = "<group>"; };
 		663F80E31B74AEF400C99EB4 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCore.framework; sourceTree = "<group>"; };
 		663F80E51B74AF1D00C99EB4 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		663F80EB1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch2Romo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		663F80EE1B74B46C00C99EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663F80EF1B74B46C00C99EB4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		663F80F01B74B46C00C99EB4 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		663F80F11B74B46C00C99EB4 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		663F80F31B74B46C00C99EB4 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		663F80F41B74B46C00C99EB4 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		663F80F61B74B46C00C99EB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		663F80FA1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch2Romo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		663F81001B74B46C00C99EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663F81021B74B46C00C99EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		663F81041B74B46C00C99EB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		663F80E81B74B46C00C99EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +127,8 @@
 				663F80E21B74AEF400C99EB4 /* frameworks */,
 				663F80BB1B74ACF000C99EB4 /* Watch2Romo */,
 				663F80D51B74ACF100C99EB4 /* Watch2RomoTests */,
+				663F80EC1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension */,
+				663F80FE1B74B46C00C99EB4 /* Watch2Romo WatchKit App */,
 				663F80BA1B74ACF000C99EB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +138,8 @@
 			children = (
 				663F80B91B74ACF000C99EB4 /* Watch2Romo.app */,
 				663F80D21B74ACF100C99EB4 /* Watch2RomoTests.xctest */,
+				663F80EB1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex */,
+				663F80FA1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +194,46 @@
 			path = Watch2Romo/frameworks;
 			sourceTree = "<group>";
 		};
+		663F80EC1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				663F80F01B74B46C00C99EB4 /* InterfaceController.h */,
+				663F80F11B74B46C00C99EB4 /* InterfaceController.m */,
+				663F80F31B74B46C00C99EB4 /* NotificationController.h */,
+				663F80F41B74B46C00C99EB4 /* NotificationController.m */,
+				663F80F61B74B46C00C99EB4 /* Images.xcassets */,
+				663F80ED1B74B46C00C99EB4 /* Supporting Files */,
+			);
+			path = "Watch2Romo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		663F80ED1B74B46C00C99EB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				663F80EE1B74B46C00C99EB4 /* Info.plist */,
+				663F80EF1B74B46C00C99EB4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		663F80FE1B74B46C00C99EB4 /* Watch2Romo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				663F81011B74B46C00C99EB4 /* Interface.storyboard */,
+				663F81041B74B46C00C99EB4 /* Images.xcassets */,
+				663F80FF1B74B46C00C99EB4 /* Supporting Files */,
+			);
+			path = "Watch2Romo WatchKit App";
+			sourceTree = "<group>";
+		};
+		663F80FF1B74B46C00C99EB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				663F81001B74B46C00C99EB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +244,12 @@
 				663F80B51B74ACF000C99EB4 /* Sources */,
 				663F80B61B74ACF000C99EB4 /* Frameworks */,
 				663F80B71B74ACF000C99EB4 /* Resources */,
+				663F810F1B74B46C00C99EB4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				663F81071B74B46C00C99EB4 /* PBXTargetDependency */,
 			);
 			name = Watch2Romo;
 			productName = Watch2Romo;
@@ -174,6 +274,39 @@
 			productReference = 663F80D21B74ACF100C99EB4 /* Watch2RomoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		663F80EA1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663F810C1B74B46C00C99EB4 /* Build configuration list for PBXNativeTarget "Watch2Romo WatchKit Extension" */;
+			buildPhases = (
+				663F80E71B74B46C00C99EB4 /* Sources */,
+				663F80E81B74B46C00C99EB4 /* Frameworks */,
+				663F80E91B74B46C00C99EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				663F80FD1B74B46C00C99EB4 /* PBXTargetDependency */,
+			);
+			name = "Watch2Romo WatchKit Extension";
+			productName = "Watch2Romo WatchKit Extension";
+			productReference = 663F80EB1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		663F80F91B74B46C00C99EB4 /* Watch2Romo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663F81091B74B46C00C99EB4 /* Build configuration list for PBXNativeTarget "Watch2Romo WatchKit App" */;
+			buildPhases = (
+				663F80F81B74B46C00C99EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch2Romo WatchKit App";
+			productName = "Watch2Romo WatchKit App";
+			productReference = 663F80FA1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +322,12 @@
 					663F80D11B74ACF100C99EB4 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 663F80B81B74ACF000C99EB4;
+					};
+					663F80EA1B74B46C00C99EB4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					663F80F91B74B46C00C99EB4 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -207,6 +346,8 @@
 			targets = (
 				663F80B81B74ACF000C99EB4 /* Watch2Romo */,
 				663F80D11B74ACF100C99EB4 /* Watch2RomoTests */,
+				663F80EA1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension */,
+				663F80F91B74B46C00C99EB4 /* Watch2Romo WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +367,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663F80E91B74B46C00C99EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663F80FB1B74B46C00C99EB4 /* Watch2Romo WatchKit App.app in Resources */,
+				663F80F71B74B46C00C99EB4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663F80F81B74B46C00C99EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663F81031B74B46C00C99EB4 /* Interface.storyboard in Resources */,
+				663F81051B74B46C00C99EB4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +409,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		663F80E71B74B46C00C99EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663F80F51B74B46C00C99EB4 /* NotificationController.m in Sources */,
+				663F80F21B74B46C00C99EB4 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -257,6 +425,16 @@
 			isa = PBXTargetDependency;
 			target = 663F80B81B74ACF000C99EB4 /* Watch2Romo */;
 			targetProxy = 663F80D31B74ACF100C99EB4 /* PBXContainerItemProxy */;
+		};
+		663F80FD1B74B46C00C99EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 663F80F91B74B46C00C99EB4 /* Watch2Romo WatchKit App */;
+			targetProxy = 663F80FC1B74B46C00C99EB4 /* PBXContainerItemProxy */;
+		};
+		663F81071B74B46C00C99EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 663F80EA1B74B46C00C99EB4 /* Watch2Romo WatchKit Extension */;
+			targetProxy = 663F81061B74B46C00C99EB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -275,6 +453,14 @@
 				663F80CC1B74ACF100C99EB4 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		663F81011B74B46C00C99EB4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				663F81021B74B46C00C99EB4 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,6 +613,62 @@
 			};
 			name = Release;
 		};
+		663F810A1B74B46C00C99EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Watch2Romo_WatchKit_Extension;
+				INFOPLIST_FILE = "Watch2Romo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		663F810B1B74B46C00C99EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Watch2Romo_WatchKit_Extension;
+				INFOPLIST_FILE = "Watch2Romo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		663F810D1B74B46C00C99EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Watch2Romo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		663F810E1B74B46C00C99EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watch2Romo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -452,6 +694,22 @@
 			buildConfigurations = (
 				663F80E01B74ACF100C99EB4 /* Debug */,
 				663F80E11B74ACF100C99EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		663F81091B74B46C00C99EB4 /* Build configuration list for PBXNativeTarget "Watch2Romo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663F810A1B74B46C00C99EB4 /* Debug */,
+				663F810B1B74B46C00C99EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		663F810C1B74B46C00C99EB4 /* Build configuration list for PBXNativeTarget "Watch2Romo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663F810D1B74B46C00C99EB4 /* Debug */,
+				663F810E1B74B46C00C99EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
