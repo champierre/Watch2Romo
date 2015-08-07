@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RMCore/RMCore.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <RMCoreDelegate>
 
+@property (nonatomic, strong) RMCoreRobot<HeadTiltProtocol, DriveProtocol, LEDProtocol> *robot;
 
 @end
 

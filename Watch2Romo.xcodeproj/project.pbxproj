@@ -14,6 +14,8 @@
 		663F80CA1B74ACF100C99EB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F80C91B74ACF100C99EB4 /* Images.xcassets */; };
 		663F80CD1B74ACF100C99EB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663F80CB1B74ACF100C99EB4 /* LaunchScreen.xib */; };
 		663F80D91B74ACF100C99EB4 /* Watch2RomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F80D81B74ACF100C99EB4 /* Watch2RomoTests.m */; };
+		663F80E41B74AEF400C99EB4 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F80E31B74AEF400C99EB4 /* RMCore.framework */; };
+		663F80E61B74AF1D00C99EB4 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F80E51B74AF1D00C99EB4 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		663F80D21B74ACF100C99EB4 /* Watch2RomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watch2RomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		663F80D71B74ACF100C99EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663F80D81B74ACF100C99EB4 /* Watch2RomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watch2RomoTests.m; sourceTree = "<group>"; };
+		663F80E31B74AEF400C99EB4 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCore.framework; sourceTree = "<group>"; };
+		663F80E51B74AF1D00C99EB4 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663F80E61B74AF1D00C99EB4 /* ExternalAccessory.framework in Frameworks */,
+				663F80E41B74AEF400C99EB4 /* RMCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		663F80B01B74ACF000C99EB4 = {
 			isa = PBXGroup;
 			children = (
+				663F80E51B74AF1D00C99EB4 /* ExternalAccessory.framework */,
+				663F80E21B74AEF400C99EB4 /* frameworks */,
 				663F80BB1B74ACF000C99EB4 /* Watch2Romo */,
 				663F80D51B74ACF100C99EB4 /* Watch2RomoTests */,
 				663F80BA1B74ACF000C99EB4 /* Products */,
@@ -117,6 +125,15 @@
 				663F80D71B74ACF100C99EB4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		663F80E21B74AEF400C99EB4 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663F80E31B74AEF400C99EB4 /* RMCore.framework */,
+			);
+			name = frameworks;
+			path = Watch2Romo/frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,9 +364,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Watch2Romo/frameworks",
+				);
 				INFOPLIST_FILE = Watch2Romo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -357,9 +381,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Watch2Romo/frameworks",
+				);
 				INFOPLIST_FILE = Watch2Romo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
